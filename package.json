@@ -1,14 +1,29 @@
 {
-  "name": "extension",
-  "version": "0.1.0",
-  "private": true,
+  "name": "notebook",
+  "version": "1.0.0",
+  "author": {
+    "name": "Ravi Sojitra",
+    "email": "ravisojitra79@gmail.com"
+  },
   "dependencies": {
+    "@editorjs/checklist": "^1.1.0",
+    "@editorjs/editorjs": "^2.18.0",
+    "@editorjs/embed": "^2.3.1",
+    "@editorjs/header": "^2.5.0",
+    "@editorjs/link": "^2.2.1",
+    "@editorjs/list": "^1.5.0",
+    "@editorjs/table": "git+https://github.com/alexiej/table.git",
+    "html2canvas": "^1.0.0-rc.7",
+    "jspdf": "^2.0.0",
+    "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3"
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux-persist": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,0 +1,98 @@
+.editor {
+    position: relative;
+    margin-left: 500px;
+}
+
+.editor-header {
+    background-color: var(--bg);
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    height: 40px;
+    display: none;
+}
+
+.editor-header svg {
+    fill: var(--primaryColor);
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+
+.editor-header h3 {
+    cursor: pointer;
+}
+
+.note-cover {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#editorjs {
+    padding:10px;
+    height: 100%;
+}
+#editorjs .ce-toolbar__plus{
+    transform: translate3d(0px, calc(20px - 50%), 0px) !important;
+}
+
+.input-cover input {
+    display: none;
+}
+
+.save-options {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-right: 20px;
+}
+
+.save-options svg {
+    fill: var(--primaryColor);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1093px) {
+    .editor {
+        margin-left: 430px;
+    }
+    #editorjs {
+        padding: 0 1rem;
+    }
+    .save-options {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0 1rem;
+    }
+}
+
+@media screen and (max-width: 896px) {
+    .editor {
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #editorjs {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #editorjs {
+        font-size: 1rem;
+    }
+    .editor {
+        margin-left: 0;
+    }
+    .editor-header {
+        display: block;
+        display: flex;
+    }
+}
